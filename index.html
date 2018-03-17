@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content = "height = device-height, width = 420, user-scalable = no" /> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Man Datt Gate</title>
+    <!-- <script type="text/javascript" src="/webiopi.js"></script> -->
+    <!-- <script type="text/javascript"> -->
+<!-- webiopi().ready(function() { -->
+    <!--     var content, button; -->
+    <!--     content = $("#content"); -->
+
+    <!--     // create a "SWITCH" labeled button for GPIO 0 -->
+    <!--     button = webiopi().createGPIOButton(0, "SWITCH"); -->
+    <!--     content.append(button); // append button to content div -->
+
+  <!--     // create a "LED" labeled button for GPIO 7 -->
+    <!--     button = webiopi().createGPIOButton(7, "LED"); -->
+    <!--     content.append(button); // append button to content div -->
+
+  <!--     // create a button that output a single pulse -->
+    <!--     button = webiopi().createPulseButton("pulse", "Pulse", 7); -->
+    <!--     content.append(button); // append button to content div -->
+
+  <!--     // create a button which output a bit sequence on GPIO 7 with a 100ms period --> 
+    <!--     button = webiopi().createSequenceButton("sos", "S.O.S 1", 7, 100, "01010100110011001100101010"); -->
+    <!--     content.append(button); // append button to content div -->
+
+  <!--     // the previous button will always output the same sequence -->
+    <!--     // you can also create a simple button with your own function --> 
+    <!--     button = webiopi().createButton("sos2", "S.O.S 2", outputSequence); -->
+    <!--     content.append(button); // append button to content div -->
+
+  <!--     // create a button which call myMacroWithoutArgs -->
+    <!--     button = webiopi().createMacroButton("macro", "Macro 1", "myMacroWithoutArgs"); -->
+    <!--     content.append(button); // append button to content div -->
+
+  <!--     // create a button which call myMacroWithArgs with "1,2,3" as argument -->
+    <!--     button = webiopi().createMacroButton("macro", "Macro 2", "myMacroWithArgs", [1,2,3]); -->
+    <!--     content.append(button); // append button to content div -->
+
+  <!--     // the previous button will always call myMacroWithArgs with the same "1,2,3" argument -->
+    <!--     // you can also create a simple button with your own function --> 
+    <!--     button = webiopi().createButton("macro2", "Macro 3", callMacro); -->
+    <!--     content.append(button); // append button to content div -->
+
+  <!--     // you can also create a button which calls a different function for mouse down and up events -->
+    <!--     button = webiopi().createButton("hold", "Hold", mousedown, mouseup); -->
+    <!--     content.append(button); -->
+
+    <!--     // Only for Chrome and Safari, create a slider that pulse out a 0-100% duty cycle ratio on GPIO 8 -->
+    <!--     button = webiopi().createRatioSlider(8); -->
+    <!--     content.append(button); -->
+
+    <!--     // Only for Chrome and Safari, create a slider that pulse out a -45 to +45° angle on GPIO 9 -->
+    <!--     button = webiopi().createAngleSlider(9); -->
+    <!--     content.append(button); -->
+    <!-- }); -->
+
+    <!-- function mousedown() { -->
+    <!--     webiopi().digitalWrite(7, 1); -->
+    <!-- } -->
+
+    <!-- function mouseup() { -->
+    <!--     webiopi().digitalWrite(7, 0); -->
+    <!-- } -->
+
+    <!-- function outputSequence() { -->
+    <!--     var sequence = "01010100110011001100101010" // S.O.S. morse code or whatever you want -->
+    <!--     // output sequence on gpio 7 with a 100ms period -->
+    <!--     webiopi().outputSequence(7, 100, sequence, sequenceCallback); -->
+    <!-- } -->
+
+    <!-- function sequenceCallback(gpio, data) { -->
+    <!--     alert("sequence on " + gpio + " finished with " + data); -->
+    <!-- } -->
+
+    <!-- function callMacro() { -->
+    <!--     var args = [1,2,3] // or whatever you want -->
+    <!--     // call myMacroWithArgs(arg) -->
+    <!--     webiopi().callMacro("myMacroWithArgs", args, macroCallback); -->
+    <!-- } -->
+
+    <!-- function macroCallback(macro, args, data) { -->
+    <!--     alert(macro + " returned with " + data); -->
+    <!-- } -->
+
+    <!-- </script> -->
+    <!-- <style type="text/css"> -->
+<!--     button { -->
+  <!--         display: block; -->
+  <!--         margin: 5px 5px 5px 5px; -->
+  <!--         width: 160px; -->
+  <!--         height: 45px; -->
+  <!--         font-size: 24pt; -->
+  <!--         font-weight: bold; -->
+  <!--         color: black; -->
+  <!--     } -->
+
+  <!--     input[type="range"] { -->
+    <!--         display: block; -->
+    <!--         width: 160px; -->
+    <!--         height: 45px; -->
+    <!--     } -->
+
+    <!--     #gpio7.LOW { -->
+      <!--         background-color: White; -->
+      <!--     } -->
+
+      <!--     #gpio7.HIGH { -->
+        <!--         background-color: Red; -->
+        <!--     } -->
+        <!-- </style> -->
+    <style>
+html {
+  background: url("./static/img/bg.gif");
+}
+    </style>
+  </head>
+  <body>
+    <audio src="./static/mp3/rickastley_artists.mp3" autoplay="autoplay" loop="loop">
+    </audio>
+    <div align="center" style="margin-top: 30px;">
+      <img src="./static/img/fire.gif" alt="FIYAH!" style="height: 100px"/>
+      <img src="./static/img/text.gif" alt="Man Datt Gate" />
+      <img src="./static/img/fire.gif" alt="FIYAH!" style="height: 100px"/>
+      <marquee direction="left" scrollamount="7" behavior="scroll" style="margin-top: 30px; width: 700px; height: 30px; color: #2a8525; font-size: 20px; font-family: Comic Sans MS; background-color: #ffff00; border-color: #ff0808; border-width: 8px; border-style: double;">Welcome to Man Datt Gate! Please enjoy your stay. (Note: Visitors who displease us will be penalized accordingly. Have a great day!)</marquee>
+      <div align="center" style="display: block">
+        <div style="display: inline-block">
+          <h2 style="text-decoration: underline; color: red;">MAN</h2>
+          <img src="./static/img/man.jpg" alt="Man" style="width: 300px"/>
+        </div>
+        <div style="display: inline-block; width: 600px; height: 350px;">
+          <img src="./static/img/gate.gif" alt="Gate Animation" style="width: 100%; height: 350px; position: relative;"/>
+          <button style="position: absolute; top: 400px; left: 675px;">OPEN</button>
+        </div>
+        <div style="display: inline-block">
+          <h2 style="text-decoration: underline; color: red;">DATT</h2>
+          <img src="./static/img/datt.jpg" alt="Datt" style="width: 300px"/>
+        </div>
+      </div>
+    </div>
+    <div id="content" align="center"></div>
+    <div align="center">
+      <div style="display: block; margin: 30px 0">
+        <img src="./static/img/staroll.gif" alt="STARS!!!" />
+        <img src="./static/img/staroll.gif" alt="STARS!!!" />
+        <img src="./static/img/staroll.gif" alt="STARS!!!" />
+        <img src="./static/img/awards.gif" alt="Awards" />
+        <img src="./static/img/staroll.gif" alt="STARS!!!" />
+        <img src="./static/img/staroll.gif" alt="STARS!!!" />
+        <img src="./static/img/staroll.gif" alt="STARS!!!" />
+      </div>
+      <img src="./static/img/mtaward2.gif" alt="Design Award" />
+      <img src="./static/img/bestdesign.gif" alt="Best Design Award" />
+      <img src="./static/img/coolsite.jpg" alt="Cool Site Award" />
+      <img src="./static/img/styleaward2.jpg" alt="Style Award" />
+      <img src="./static/img/styleaward1.jpg" alt="Style Award" />
+      <img src="./static/img/styleaward3.jpg" alt="Style Award" />
+      <img src="./static/img/KeepSpirit.jpg" alt="Keep Spirit Award" />
+      <img src="./static/img/divider.gif" alt="Divider" style="width: 80%"/>
+    </div>
+    <div style="float: right">
+      <img src="./static/img/netscape.gif" alt="Netscape" />
+      <img src="./static/img/ie4.gif" alt="IE4" />
+      <img src="./static/img/notepad.gif" alt="Notepad" />
+    </div>
+    <div style="float: left">
+      <div align='center'><img src='http://www.free-website-hit-counter.com/c.php?d=9&id=115552&s=1' alt="Hit counter" border='0' title='free website hit counter'>/div>
+      </div>
+    </div>
+  </body>
